@@ -27,24 +27,25 @@ export const Hero = ({
         {buttonText && (
           <button
             onClick={onButtonClick}
-            className="bg-[#5C6B58] text-[var(--brand-bg)] px-10 py-3 rounded-full hover:opacity-90 transition-all text-[20px] font-bold shadow-sm"
+            className="bg-[#5A6D5A] text-[var(--brand-bg)] px-10 py-3 rounded-full transition-all hover:bg-[#4a5a4a] hover:scale-105 active:scale-95 text-[20px] shadow-sm"
           >
             {buttonText}
           </button>
         )}
       </div>
 
-      {/* Bild-sektion */}
       <div className="w-full relative flex justify-center bg-transparent">
         {imageSrc ? (
           <img
             // @ts-ignore
             fetchPriority="high"
-            src={imageSrc}
-            alt="Hero Illustration"
-            width="1920"
-            height="500"
             loading="eager"
+            src="/images/landingpage.webp"
+            srcSet="/images/landingpage.webp 800w, /images/landingpage.webp 2500w"
+            sizes="(max-width: 768px) 800px, 2500px"
+            alt="Hero Illustration"
+            width="2515"
+            height="646"
             className="w-full h-auto block object-contain mix-blend-multiply md:mix-blend-normal"
           />
         ) : (
