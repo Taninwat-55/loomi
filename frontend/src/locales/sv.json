@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "Hem",
+    "services": "Våra Tjänster",
+    "portfolio": "Portfölj",
+    "about": "Om oss",
+    "contact": "Kontakta oss",
+    "logo_subtitle": "Webbyrå"
+  },
+  "hero": {
+    "title": "Visionären",
+    "description": "Som visionär drivs du av att se din idé ta form och göra intryck. Vi är hantverkarna som förstår att en digital upplevelse handlar om mer än bara pixlar; det handlar om känsla och teknisk precision. På Loomi är din vision vårt uppdrag, och vi bygger den med passion för varje detalj.",
+    "button": "Kontakta Oss"
+  },
+  "services": {
+    "title": "Våra Tjänster",
+    "seo": {
+      "title": "SEO & GEO",
+      "description": "SEO är bara början. Vi optimerar din digitala närvaro för både klassiska sökresultat och framtidens AI-motorer (GEO). Vi ser till att ditt varumärke inte bara hittas, utan också prioriteras av morgondagens smarta sökverkstäder."
+    },
+    "web": {
+      "title": "Webbutveckling",
+      "description": "Vi förvandlar din vision till en sömlös, blixtsnabb och skalbar digital upplevelse. Med fokus på både användarvänlighet och smart kod bygger vi grunden för din framgång online."
+    },
+    "design": {
+      "title": "UI & UX",
+      "description": "Vi designar användarresor som känns naturliga, engagerar och konverterar. Från skiss till färdig design fokuserar vi på människan bakom skärmen för att skapa upplevelser som verkligen gör skillnad."
+    }
+  },
+  "mid_cta": {
+    "text": "Varje projekt är unikt och kräver sin egen balans av kreativitet och teknik. Läs mer om hur vi kan skräddarsy våra tjänster för att passa just din vision.",
+    "button": "Se hur vi kan hjälpa dig"
+  },
+  "final_cta": {
+    "title": "Redo att starta din digitala resa?",
+    "description": "Låt oss boka ett förutsättningslöst möte och prata om hur vi kan hjälpa ditt företag att växa.",
+    "button": "Boka Konsultation",
+    "img_alt": "Illustration av ett pilträd vid vattnet"
+  },
+  "process": {
+    "title": "Vad du kan förvänta dig",
+    "steps": [
+      {
+        "title": "Tydlig Process",
+        "text": "Vi har en välbeprövad roadmap som tar oss från idé till lansering, så att du alltid vet exakt var vi befinner oss i arbetet. Ingen gillar överraskningar."
+      },
+      {
+        "title": "Enkel Kommunikation",
+        "text": "Vi tror på rak och ärlig dialog, utan krånglig tech-jargong. Du får en dedikerad kontaktperson och vi lovar snabba svar."
+      },
+      {
+        "title": "Skräddarsydda lösningar",
+        "text": "Vi utgår från dina unika mål och din målgrupp. Din webbplats, SEO-strategi eller design anpassas helt efter dina specifika behov."
+      }
+    ]
+  },
+  "common": {
+    "read_more": "Läs mer"
+  },
+  "footer": {
+    "quick_links": "Snabbknappar",
+    "services": "Tjänster",
+    "contact": "Kontakta oss",
+    "privacy": "Integritetspolicy",
+    "cookies": "Cookies",
+    "copyright": "© 2026 loomi Webbyrå"
+  }
+}

@@ -1,28 +1,30 @@
 import { ServiceCard } from '../ui/ServiceCard';
 import { Search, Code, Palette } from 'lucide-react';
+import { useTranslation } from "react-i18next";
 
 export const ServicesGrid = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-20 px-6 max-w-7xl mx-auto">
-      <h2 className="text-5xl font-nerko mb-16 text-[#282B4A]">Våra Tjänster</h2>
+      <h2 className="text-5xl font-nerko mb-16 text-[#282B4A]">{t('services.title')}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         <ServiceCard 
           variant="grid"
           icon={Search}
-          title="SEO & CEO"
-          description="SEO är bara början. Vi optimerar din digitala närvaro för både klassiska sökresultat och framtidens AI-motorer (GEO). Vi ser till att ditt varumärke inte bara hittas, utan också prioriteras av morgondagens smarta sökverkstäder."
+          title={t('services.seo.title')}
+          description={t('services.seo.description')}
         />
         <ServiceCard 
           variant="grid"
           icon={Code}
-          title="Webbutveckling"
-          description="Vi förvandlar din vision till en sömlös, blixtsnabb och skalbar digital upplevelse. Med fokus på både användarvänlighet och smart kod bygger vi grunden för din framgång online."
+          title={t('services.web.title')}
+          description={t('services.web.description')}
         />
         <ServiceCard 
           variant="grid"
           icon={Palette}
-          title="UI & UX"
-          description="Vi designar användarresor som känns naturliga, engagerar och konverterar. Från skiss till färdig design fokuserar vi på människan bakom skärmen för att skapa upplevelser som verkligen gör skillnad."
+          title={t('services.design.title')}
+          description={t('services.design.description')}
         />
       </div>
     </section>

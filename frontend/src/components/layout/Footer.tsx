@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="w-full pt-12 pb-8 px-8 md:px-16 border-t border-[var(--brand-dark)] mt-auto font-nerko text-[var(--brand-dark)]">
       <div className="max-w-[1400px] mx-auto">
@@ -9,7 +12,7 @@ export const Footer = () => {
           <div className="flex flex-col flex-shrink-0">
             <span className="text-[42px] font-bold leading-[0.7]">loomi</span>
             <span className="text-[14px] uppercase font-bold tracking-[0.3em] mt-1 text-center">
-              Webbyrå
+              {t("nav.logo_subtitle")}
             </span>
           </div>
 
@@ -19,32 +22,32 @@ export const Footer = () => {
             <div className="flex flex-col items-start min-w-fit">
               {/* Ändrat h4 -> p för accessibility */}
               <p className="text-[24px] font-bold mb-6 underline decoration-2 underline-offset-[10px] whitespace-nowrap text-left">
-                Snabbknappar
+                {t("footer.quick_links")}
               </p>
               <ul className="flex flex-col gap-2 list-none p-0 m-0 text-[18px] items-start">
                 <li>
                   <Link to="/" className="hover:underline block">
-                    Hem
+                    {t("nav.home")}
                   </Link>
                 </li>
                 <li>
                   <Link to="/tjanster" className="hover:underline block">
-                    Våra tjänster
+                    {t("nav.services")}
                   </Link>
                 </li>
                 <li>
                   <Link to="/portfolj" className="hover:underline block">
-                    Portfölj
+                    {t("nav.portfolio")}
                   </Link>
                 </li>
                 <li>
                   <Link to="/om-oss" className="hover:underline block">
-                    Om Oss
+                    {t("nav.about")}
                   </Link>
                 </li>
                 <li>
                   <Link to="/kontakta-oss" className="hover:underline block">
-                    Kontakta oss
+                    {t("nav.contact")}
                   </Link>
                 </li>
               </ul>
@@ -53,7 +56,7 @@ export const Footer = () => {
             {/* Tjänster */}
             <div className="flex flex-col items-start min-w-fit">
               <p className="text-[24px] font-bold mb-6 underline decoration-2 underline-offset-[10px] whitespace-nowrap text-left">
-                Tjänster
+                {t("footer.services")}
               </p>
               <ul className="flex flex-col gap-2 list-none p-0 m-0 text-[18px] items-start">
                 <li>
@@ -61,7 +64,7 @@ export const Footer = () => {
                     to="/tjanster#seo"
                     className="hover:underline block whitespace-nowrap"
                   >
-                    SEO & CEO
+                    {t("services.seo.title")}
                   </Link>
                 </li>
                 <li>
@@ -69,7 +72,7 @@ export const Footer = () => {
                     to="/tjanster#webb"
                     className="hover:underline block whitespace-nowrap"
                   >
-                    Webbutveckling
+                    {t("services.web.title")}
                   </Link>
                 </li>
                 <li>
@@ -77,7 +80,7 @@ export const Footer = () => {
                     to="/tjanster#ui-ux"
                     className="hover:underline block whitespace-nowrap"
                   >
-                    UI & UX
+                    {t("services.design.title")}
                   </Link>
                 </li>
               </ul>
@@ -86,7 +89,7 @@ export const Footer = () => {
             {/* Kontakt */}
             <div className="flex flex-col items-start min-w-fit">
               <p className="text-[24px] font-bold mb-6 underline decoration-2 underline-offset-[10px] whitespace-nowrap text-left">
-                Kontakta oss
+                {t("footer.contact")}
               </p>
               <ul className="flex flex-col gap-2 list-none p-0 m-0 text-[18px] items-start">
                 <li>
@@ -121,12 +124,14 @@ export const Footer = () => {
 
         {/* NEDRE RADEN */}
         <div className="flex flex-row justify-between items-center w-full text-[16px] font-bold pt-6 border-t border-[var(--brand-dark)]/20">
-          <p>© 2026 loomi Webbyrå</p>
+          <p>{t("footer.copyright")}</p>
           <div className="flex gap-10">
             <span className="cursor-pointer hover:underline">
-              Integritetspolicy
+              {t("footer.privacy")}
             </span>
-            <span className="cursor-pointer hover:underline">Cookies</span>
+            <span className="cursor-pointer hover:underline">
+              {t("footer.cookies")}
+            </span>
           </div>
         </div>
       </div>

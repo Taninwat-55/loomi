@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Our Services",
+    "portfolio": "Portfolio",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "logo_subtitle": "Web Agency"
+  },
+  "hero": {
+    "title": "Visionary",
+    "description": "As a visionary, you are driven by seeing your idea take shape and make an impression. We are the craftsmen who understand that a digital experience is about more than just pixels; it's about feeling and technical precision. At Loomi, your vision is our mission, and we build it with passion for every detail.",
+    "button": "Contact Us"
+  },
+  "services": {
+    "title": "Our Services",
+    "seo": {
+      "title": "SEO & GEO",
+      "description": "SEO is just the beginning. We optimize your digital presence for both classic search results and future AI engines (GEO). We ensure your brand is not just found, but also prioritized by tomorrow's smart search workshops."
+    },
+    "web": {
+      "title": "Web Development",
+      "description": "We transform your vision into a seamless, lightning-fast, and scalable digital experience. With a focus on both usability and smart code, we build the foundation for your online success."
+    },
+    "design": {
+      "title": "UI & UX",
+      "description": "We design user journeys that feel natural, engage, and convert. From sketch to finished design, we focus on the person behind the screen to create experiences that truly make a difference."
+    }
+  },
+  "mid_cta": {
+    "text": "Every project is unique and requires its own balance of creativity and technology. Read more about how we can tailor our services to fit your specific vision.",
+    "button": "See how we can help you"
+  },
+  "process": {
+    "title": "What you can expect",
+    "steps": [
+      {
+        "title": "Clear Process",
+        "text": "We have a well-proven roadmap that takes us from idea to launch, so you always know exactly where we are in the work. No one likes surprises."
+      },
+      {
+        "title": "Simple Communication",
+        "text": "We believe in straight and honest dialogue, without complicated tech jargon. You get a dedicated contact person and we promise quick responses."
+      },
+      {
+        "title": "Customized Solutions",
+        "text": "We start from your unique goals and your target audience. Your website, SEO strategy, or design is fully adapted to your specific needs."
+      }
+    ]
+  },
+  "final_cta": {
+    "title": "Ready to start your digital journey?",
+    "description": "Let's book a meeting and talk about how we can help your business grow.",
+    "button": "Book Consultation",
+    "img_alt": "Illustration of a willow tree by the water"
+  },
+  "common": {
+    "read_more": "Read more"
+  },
+  "footer": {
+    "quick_links": "Quick Links",
+    "services": "Services",
+    "contact": "Contact Us",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookies",
+    "copyright": "© 2026 loomi Web Agency"
+  }
+}

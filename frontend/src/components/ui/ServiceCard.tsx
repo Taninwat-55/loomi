@@ -1,4 +1,6 @@
 import { ChevronRight, type LucideIcon } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
 interface ServiceCardProps {
   title: string;
   description: string;
@@ -14,6 +16,7 @@ export const ServiceCard = ({
   bullets,
   variant,
 }: ServiceCardProps) => {
+  const { t } = useTranslation();
   const isList = variant === "list";
 
   return (
@@ -34,7 +37,8 @@ export const ServiceCard = ({
           {description}
         </p>
         <button className="group text-[#5A6D5A] text-xl font-bold flex items-center gap-1 transition-all mt-auto self-start">
-          <span className="group-hover:underline">Läs mer</span>
+          {/* Här använder vi översättningsverktyget */}
+          <span className="group-hover:underline">{t('common.read_more')}</span>
           <ChevronRight
             size={24}
             className="transition-transform group-hover:translate-x-1"
