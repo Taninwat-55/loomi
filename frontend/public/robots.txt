@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sökrobotar får skanna hela sidan
+Sitemap: https://din-doman.se/sitemap.xml
