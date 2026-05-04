@@ -1,4 +1,11 @@
+import { lazy, Suspense } from "react";
 import { Hero } from "../../components/sections/Hero";
+import { ServicesGrid } from "../../components/sections/ServicesGrid";
+
+// Lazy loading av komponenter längre ner på sidan
+const MidCTA = lazy(() => import("../../components/landingpage/MidCTA").then(module => ({ default: module.MidCTA })));
+const Process = lazy(() => import("../../components/landingpage/Process").then(module => ({ default: module.Process })));
+const FinalCTA = lazy(() => import("../../components/landingpage/FinalCTA").then(module => ({ default: module.FinalCTA })));
 
 const Hem = () => {
   return (
@@ -9,6 +16,14 @@ const Hem = () => {
         buttonText="Kontakta Oss"
         imageSrc="/images/landingpage.webp"
       />
+      
+      <ServicesGrid />
+
+      <Suspense fallback={<div className="h-20" />}>
+        <MidCTA />
+        <Process />
+        <FinalCTA />
+      </Suspense>
     </main>
   );
 };
