@@ -5,9 +5,10 @@ import { LanguageSwitcher } from "../ui/LanguageSwitcher";
 
 export const Navbar = () => {
   const { t } = useTranslation();
+  
   return (
-    <nav className="w-full py-10 px-8 md:px-16 flex justify-between items-center font-nerko text-[var(--brand-dark)]">
-      {/* Logotypen - Använder span istället för rubrik-taggar för bättre A11y i en nav */}
+    <nav className="w-full py-10 px-8 md:px-16 flex justify-between items-center font-nerko text-[var(--brand-dark)] bg-[var(--brand-bg)] sticky top-0 z-50">
+      {/* Logotypen */}
       <Link to="/" className="no-underline text-current" aria-label="Loomi Webbyrå - Gå till startsidan">
         <div className="flex flex-col">
           <span className="text-[42px] font-bold leading-[0.7]" aria-hidden="true">loomi</span>

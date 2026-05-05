@@ -15,12 +15,12 @@ export const Hero = ({
 }: HeroProps) => {
   return (
     <section className="w-full pt-16 pb-0 flex flex-col items-center font-nerko overflow-x-hidden">
-      <div className="max-w-3xl px-8 text-center flex flex-col items-center mb-12">
-        <h1 className="text-[64px] md:text-[80px] font-bold text-[var(--brand-dark)] leading-tight mb-4">
+      <div className="max-w-5xl px-8 text-center flex flex-col items-center mb-12">
+        <h1 className="text-[48px] md:text-[72px] font-bold text-[var(--brand-dark)] leading-[1.1] mb-6">
           {title}
         </h1>
 
-        <p className="text-[18px] md:text-[20px] text-[var(--brand-dark)] leading-relaxed mb-10 max-w-2xl">
+        <p className="text-[18px] md:text-[20px] text-[var(--brand-dark)] leading-relaxed mb-10 max-w-3xl opacity-80">
           {description}
         </p>
 
@@ -40,9 +40,7 @@ export const Hero = ({
             // @ts-ignore
             fetchPriority="high"
             loading="eager"
-            src="/images/landingpage.webp"
-            srcSet="/images/landingpage.webp 800w, /images/landingpage.webp 2500w"
-            sizes="(max-width: 768px) 800px, 2500px"
+            src={imageSrc}
             alt="Hero Illustration"
             width="2515"
             height="646"

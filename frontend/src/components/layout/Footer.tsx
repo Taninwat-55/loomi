@@ -5,7 +5,7 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="w-full pt-12 pb-8 px-8 md:px-16 border-t border-[var(--brand-dark)] mt-auto font-nerko text-[var(--brand-dark)]">
+    <footer className="w-full pt-12 pb-8 px-8 md:px-16 border-t border-[var(--brand-dark)] mt-auto font-nerko text-[var(--brand-dark)] bg-[var(--brand-bg)]">
       <div className="max-w-[1400px] mx-auto">
         <div className="flex flex-row items-start w-full mb-12">
           {/* 1. Logotypen */}
@@ -20,7 +20,6 @@ export const Footer = () => {
           <div className="flex flex-row gap-12 lg:gap-24 mx-auto">
             {/* Snabbknappar */}
             <div className="flex flex-col items-start min-w-fit">
-              {/* Ändrat h4 -> p för accessibility */}
               <p className="text-[24px] font-bold mb-6 underline decoration-2 underline-offset-[10px] whitespace-nowrap text-left">
                 {t("footer.quick_links")}
               </p>
@@ -94,7 +93,7 @@ export const Footer = () => {
               <ul className="flex flex-col gap-2 list-none p-0 m-0 text-[18px] items-start">
                 <li>
                   <a
-                    href="mailto:info@loomi.com"
+                    href="mailto:loomi@gmail.com"
                     className="hover:underline block"
                   >
                     loomi@gmail.com
