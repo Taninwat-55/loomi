@@ -90,7 +90,7 @@ const PROCESS = [
 
 const Tjanster: React.FC = () => {
   return (
-    <main className="min-h-screen bg-[#F5F5DC] text-[#2D362D] font-nerko selection:bg-[#5A6D5A] selection:text-white pb-20">
+    <main className="min-h-screen bg-[#EEEBDA] text-[#2D362D] font-nerko selection:bg-[#5A6D5A] selection:text-white pb-20">
       {/* 1. Top Hero Title & CTA */}
       <header className="pt-20 pb-10 px-6 text-center">
         <h1 className="text-5xl md:text-6xl mb-8 leading-tight font-bold">

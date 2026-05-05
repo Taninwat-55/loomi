@@ -12,7 +12,7 @@ const Hem = () => {
   const { t } = useTranslation();
 
   return (
-    <main>
+    <main className="bg-[#EEEBDA]">
       <Hero 
         title={t('hero.title')}
         description={t('hero.description')}
