@@ -20,7 +20,7 @@ export const Hero = ({
           {title}
         </h1>
 
-        <p className="text-[18px] md:text-[20px] text-[var(--brand-dark)] leading-relaxed mb-10 max-w-3xl opacity-80">
+        <p className="text-[18px] md:text-[20px] text-[var(--brand-dark)] leading-relaxed mb-10 max-w-3xl">
           {description}
         </p>
 
